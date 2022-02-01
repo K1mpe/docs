@@ -59,7 +59,7 @@ Scheduling periodic jobs using the default scheduling methods have some limitati
 As a more convenient way to schedule periodic tasks, the NetDaemon Scheduling Extensions provides an extension method `ScheduleCron()`. This can be used like this:
 
 ```csharp
-scheduler.ScheduleCron("30 23 * * *",() => entities.Light.Living.TurnOff();
+scheduler.ScheduleCron("30 23 * * *",() => entities.Light.Living.TurnOff());
 ```
 Which will turn off the living room light at 23:30 each day. 
 
